@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   background-color: rgb(27, 27, 27);
 }
 main {
@@ -30,10 +31,14 @@ input:focus {
   outline: none;
 }
 
+input::placeholder {
+  font-size: 28px;
+}
+
 button {
   padding: 10px;
   font-size: 20px;
-  background-color: rgb(97, 97, 97);
+  background-color: rgb(206, 0, 0);
   color: white;
   border: 1px solid white;
 }
@@ -49,23 +54,25 @@ button {
 
 .movie-details {
   width: 460px;
-  visibility: hidden;
+  display: none;
   /* background-color: blue; */
 }
 
 .movie-details p {
-  color: #fff;
+  color: #d8d8d8;
   font-size: 22px;
-  margin-bottom: 8px;
+
+  line-height: 28px;
+  /* margin-bottom: 3px; */
 }
 
 .movie-details span {
   font-size: 18px;
-  color: #d4d4d4;
+  color: #ca6e6e;
 }
 
 .image {
-  visibility: hidden;
+  display: none;
   width: 300px;
   height: 400px;
 }
@@ -73,4 +80,56 @@ button {
 .poster {
   width: 100%;
   height: 100%;
+}
+
+.error {
+  font-size: 36px;
+  width: 800px;
+  display: none;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    width: 400px;
+  }
+
+  input {
+    font-size: 18px;
+    padding: 7px;
+  }
+
+  input::placeholder {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  .details {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .image {
+    width: 250px;
+    height: 350px;
+  }
+
+  .movie-details {
+    width: 350px;
+  }
+
+  .movie-details p {
+    font-size: 18px;
+  }
+
+  .error {
+    width: 400px;
+    font-size: 21px;
+  }
 }

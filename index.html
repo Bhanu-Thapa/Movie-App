@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@400;600;700;800&family=Road+Rage&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- STYLE -->
     <link rel="stylesheet" href="./style.css" />
 
@@ -12,24 +20,28 @@
   <body>
     <main>
       <div class="search">
-        <input type="text" />
+        <input type="text" placeholder="ENTER MOVIE NAME" />
         <button onclick="search()">SEARCH</button>
       </div>
       <div class="details">
         <div class="movie-details">
-          <p>Title : <span class="title"></span></p>
-          <p>Year : <span class="year"></span></p>
-          <p>Released : <span class="released"></span></p>
-          <p>Genre : <span class="genre"></span></p>
-          <p>Director : <span class="director"></span></p>
-          <p>Writer : <span class="writer"></span></p>
-          <p>Actors : <span class="actors"></span></p>
-          <p>Plot : <span class="plot"></span></p>
-          <p>Language : <span class="language"></span></p>
-          <p>Rating : <span class="rating"></span></p>
+          <p>TITLE : <span class="title"></span></p>
+          <p>YEAR : <span class="year"></span></p>
+          <p>RELEASED : <span class="released"></span></p>
+          <p>GENRE : <span class="genre"></span></p>
+          <p>DIRECTOR : <span class="director"></span></p>
+          <p>WRITER : <span class="writer"></span></p>
+          <p>ACTORS : <span class="actors"></span></p>
+          <p>PLOT : <span class="plot"></span></p>
+          <p>LANGUAGE : <span class="language"></span></p>
+          <p>RATING : <span class="rating"></span></p>
         </div>
         <div class="image">
           <img class="poster" src="" />
+        </div>
+
+        <div class="error">
+          <p>SORRY MOVIE NOT FOUND</p>
         </div>
       </div>
     </main>
